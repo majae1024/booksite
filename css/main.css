@@ -1,0 +1,531 @@
+@charset "utf-8";
+#bcr {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f6f9fd -1%, #f8fafd 11%, #fff 99%);
+}
+.bk_rit img:hover {
+  transition: all 0.1s linear;
+  transform: scale(1.1);
+}
+.side_itm img:hover {
+  transition: all 0.1s linear;
+  transform: scale(0.9);
+}
+#wrap {
+  width: 1300px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+#container {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+.obook {
+  width: 250px;
+  height: 80px;
+  margin: 0 5px;
+}
+.obook > a {
+  width: 100%;
+  height: 100%;
+}
+.obook > a > p {
+  float: left;
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+}
+.obook > a > span {
+  float: left;
+  padding: 8px 0 0 7px;
+  width: 58%;
+  height: 67px;
+  font-family: "NotosansR";
+  font-size: 13px;
+  color: #999;
+  text-align: left;
+  overflow: hidden;
+}
+.obook > a > span > strong {
+  color: black;
+}
+.obook > a > span > p {
+  padding-top: 12px;
+}
+.obook > a > p > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+/* 동그라미 책 배너 끝 */
+#slideWrap {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.slide {
+  width: 800px;
+  height: 365px;
+  position: relative;
+  float: left;
+  margin: 15px 0 0 0;
+  background-color: #999;
+  overflow: hidden;
+}
+.slide_box {
+  width: 4000px;
+  height: 100%;
+}
+.slide_box li {
+  width: 800px;
+  height: 100%;
+  float: left;
+}
+.slide_box li a img {
+  width: 100%;
+  height: 100%;
+}
+.slide:hover span {
+  width: 10px;
+  height: 60px;
+  padding: 24px 15px 0 10px;
+  position: absolute;
+  top: 50%;
+  text-indent: -7px;
+  font-size: 25px;
+  color: #fff;
+  line-height: 15px;
+  background: rgba(124, 124, 124, 0.6);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.slide span:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 0;
+  padding: 0 0 50px 0;
+}
+
+.next {
+  right: 0;
+  padding: 10px;
+}
+
+/* 슬라이더 탭부분 */
+.book_box {
+  width: 400px;
+  height: 100%;
+  float: right;
+}
+
+.side_tab li {
+  width: 125px;
+  height: 36px;
+  float: left;
+  margin: 15px 4px 0 4px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 13px;
+  color: #5e5e5e;
+  box-shadow: 0 4px 20px 0 rgba(105, 125, 155, 0.15);
+}
+.side_tab li:hover {
+  box-shadow: none;
+  border: 1px solid #e7e7e7;
+  cursor: pointer;
+}
+.side_itm {
+  width: 100%;
+  height: 320px;
+  margin-top: 60px;
+}
+.side_itm li {
+  width: 100%;
+  height: 100px;
+  margin: 5px 0 5px 0;
+}
+.side_itm li:nth-child(2) {
+  border-top: 1px solid #dadcdd;
+  border-bottom: 1px solid #dadcdd;
+}
+.side_book {
+  width: 126px;
+  height: 83px;
+  margin-left: 5px;
+  margin-top: 10px;
+  float: left;
+  overflow: hidden;
+}
+.side_book img {
+  width: 100%;
+  min-height: 100%;
+}
+.book_info {
+  width: 185px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.book_ttl {
+  float: left;
+}
+.book_info .author {
+  float: left;
+  padding: 5px 0 10px 0;
+  color: #a7a7a7;
+}
+.price_box {
+  width: 200xpx;
+  float: left;
+}
+.price_box .price {
+  font-weight: bold;
+  font-size: 16px;
+}
+.price_box {
+  font-weight: bold;
+}
+#itm1 {
+  display: block;
+}
+#itm2 {
+  display: none;
+}
+#itm3 {
+  display: none;
+}
+/* 배너 끝 */
+#best {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.bk_lft {
+  width: 250px;
+  height: 170px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.bk_lft h2 {
+  font-size: 30px;
+  float: left;
+  font-family: "NotosansB";
+}
+.bk_lft span {
+  font-size: 16px;
+  float: left;
+  padding: 10px 0 0 0;
+  font-family: "Notosansr";
+  color: #999999;
+}
+.bk_lft p a {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  color: #555555;
+  font-family: "Notosansr";
+}
+
+.bk_rit {
+  width: 1050px;
+  height: 90%;
+  top: 10%;
+  right: 0;
+  position: absolute;
+}
+.bk_rit > ul {
+  width: 90%;
+  height: 97%;
+  position: absolute;
+  left: 50px;
+}
+.bk_rit > ul > li {
+  width: 188px;
+  height: 370px;
+  float: left;
+  overflow: hidden;
+  line-height: 15px;
+}
+.book_img {
+  width: 177px;
+  height: 260px;
+  overflow: hidden;
+}
+.book_img > img {
+  width: 100%;
+  min-height: 100%;
+}
+
+#new {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
+  position: relative;
+}
+.new_list {
+  width: 2150px;
+  height: 500px;
+  position: absolute;
+}
+.new_list > ul > li {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#new > .bk_rit {
+  width: 1050px;
+  height: 70%;
+  top: 10%;
+  right: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.slideicon {
+  width: 100px;
+  height: 50px;
+  top: 60%;
+  left: 0;
+  position: absolute;
+}
+.prev1 {
+  left: 0%;
+  position: absolute;
+}
+
+.next1 {
+  left: 90%;
+  position: absolute;
+}
+.slideicon > span {
+  width: 10px;
+  height: 60px;
+  padding: 24px 15px 0 10px;
+  position: absolute;
+  top: 50%;
+  text-indent: -7px;
+  font-size: 40px;
+  color: black;
+  line-height: 15px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.slideicon .prev1:hover {
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+}
+.slideicon .next1:hover {
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+}
+/* 현황 */
+#current {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+#current > #back {
+  width: 1600px;
+  height: 55%;
+  right: 0;
+  position: absolute;
+}
+#current > h2 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: "NotosansB";
+  position: absolute;
+  top: 15%;
+}
+#current > h4 {
+  position: absolute;
+  font-size: 16px;
+  font-family: "Notosansr";
+  color: white;
+  top: 30%;
+}
+#current > .cclcate {
+  width: 850px;
+  height: 380px;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+.cclcate > li {
+  width: 230px;
+  height: 100%;
+  float: left;
+  position: relative;
+  margin-right: 50px;
+  overflow: hidden;
+}
+.ccl {
+  width: 230px;
+  height: 60%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.cclcate > li > a > .ccl > img {
+  width: 100%;
+  height: 100%;
+}
+.cclcate > li > a .ccl img:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.4);
+}
+
+#current .cclcate li a h3 {
+  width: 100%;
+  position: absolute;
+  font-family: "NotosansM";
+  font-size: 20px;
+  bottom: 25%;
+  text-align: center;
+}
+#current .cclcate li a > h4 {
+  width: 100%;
+  position: absolute;
+  font-family: "NotosansR";
+  font-size: 16px;
+  color: #999999;
+  bottom: 15%;
+  text-align: center;
+  letter-spacing: -1px;
+}
+/* 편집자 추천 */
+#recommend {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+#recommend > .rcmnd_pk {
+  width: 260px;
+  height: 282px;
+  top: 25%;
+  position: absolute;
+}
+
+.rcmnd_pk > ul {
+  float: left;
+  padding: 0;
+  width: 150px;
+  text-align: center;
+}
+.rcmnd_pk > ul > li {
+  width: 100px;
+  height: 40px;
+  display: block;
+  float: left;
+  margin-bottom: 4px;
+  padding: 0;
+  width: 100%;
+  font-family: "NotosansM";
+  color: black;
+  line-height: 28px;
+  padding: 4px 18px 2px 14px;
+  font-size: 15px;
+  letter-spacing: -0.04em;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.rcmnd_box li:hover {
+  border-color: #0c6eaf; /* 마우스를 올리면 테두리 색상이 변경됨 */
+}
+/* 책 끝 */
+/* 카드스토리 */
+#story {
+  width: 100%;
+  height: 640px;
+  position: relative;
+  margin-top: 100px;
+}
+#story > h3 {
+  font-size: 20px;
+  font-family: "NotosansB";
+  text-align: center;
+}
+#story > h4 {
+  font-size: 14px;
+  font-family: "NotosansR";
+  text-align: center;
+  padding-top: 15px;
+}
+#story > .card_icon {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  transform: translate(-50%, -50%);
+}
+.card_icon > img {
+  width: 100%;
+  height: 100%;
+}
+#story > ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 110px;
+}
+#story > ul > li {
+  width: 20%;
+  height: 234px;
+  background-color: #555555;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+#story > ul > li > a > img {
+  width: 100%;
+  min-height: 100%;
+}
+
+#story > ul > li > a > div {
+  position: absolute;
+  top: 0;
+  float: left;
+  padding: 30px 20px 0 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 161, 171, 0.85);
+  display: none;
+}
+#story > ul > li > a > div > b {
+  float: left;
+  width: 100%;
+  height: 36px;
+  font-family: "NotosansR";
+  font-size: 15px;
+  line-height: 1.47rem;
+  color: #fff;
+  text-align: left;
+  overflow: hidden;
+}
+#story > ul > li > a > div > span {
+  float: left;
+  margin-top: 3px;
+  height: 20px;
+  font-size: 13px;
+  color: #fff;
+  overflow: hidden;
+  opacity: 0.8;
+}
